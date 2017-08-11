@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Epicodus Path</title>
+</head>
+
+<body>
+  <!--Get Name-->
+  <div class="container">
+    <form id="survey">
+      <div class="form-group">
+        <div id="blank">
+          <label for="name">Name</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+      </div>
+  </div>
+  <!--get title -->
+  <select class="form-control" id="title">
+  <option>Mr.</option>
+  <option>Mrs.</option>
+    </select>
+  <!-- get date of birth -->
+  <div class="form-group">
+    <label for="born">Date of birth:</label>
+    <input id="born" class="form-control" type="date">
+  </div>
+  <!--First round of questions with radio button-->
+  <div class="radio">
+    <h3>question</h3>
+    <label>
+    <input type="radio" name="zombieStatus" value="human" checked>
+    Human (not a zombie)
+  </label>
+  </div>
+  <div class="radio">
+    <label>
+    <input type="radio" name="zombieStatus" value="bitten">
+    Bitten, but not yet zombie
+  </label>
+  </div>
+  <div class="radio">
+    <label>
+    <input type="radio" name="zombieStatus" value="zombie">
+    Brains!!!
+  </label>
+  </div>
+  <button type="submit" class="btn">Submit</button>
+  </form>
+</body>
+
+</html>
