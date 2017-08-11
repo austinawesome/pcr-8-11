@@ -12,48 +12,198 @@
 </head>
 
 <body>
-  <!--Get Name-->
-  <div class="container">
-    <form id="survey">
-      <div class="form-group">
-        <div id="blank">
-          <label for="name">Name</label>
-          <input id="name" class="form-control" type="text">
+  <div class="initialpage">
+    <!--Get Name-->
+    <div class="container">
+      <form id="survey">
+        <div class="form-group">
+          <div id="blank">
+            <label for="name">Name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
         </div>
-      </div>
-  </div>
-  <!--get title -->
-  <select class="form-control" id="title">
+    </div>
+    <!--get title -->
+    <select class="form-control" id="title">
   <option>Mr.</option>
   <option>Mrs.</option>
+  <option>Ms.</option>
+  <option>Esq.</option>
     </select>
-  <!-- get date of birth -->
-  <div class="form-group">
-    <label for="born">Date of birth:</label>
-    <input id="born" class="form-control" type="date">
+    <!-- get date of birth -->
+    <div class="form-group">
+      <label for="born">Date of birth:</label>
+      <input id="born" class="form-control" type="date">
+    </div>
+
+    <!--First round of questions with radio button-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 columns">
+          <h3>Which is more appealing in a programming language?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q1" value="a" checked>Popularity!!!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q1" value="b">Youth!!!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q1" value="c">Artistic!!!
+            </label>
+          </div>
+        </div>
+        <div class="col-md-3 columns">
+          <h3>which sounds cooler</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q2" value="a" checked>Java/android
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q2" value="b">Ruby/Rails
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q2" value="c">css/design
+            </label>
+          </div>
+        </div>
+        <div class="col-md-3 columns">
+          <h3>which do you prefer?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q3" value="a" checked>Phones
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q3" value="b">Trains
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q3" value="c">Easels
+            </label>
+          </div>
+        </div>
+        <div class="col-md-3 columns">
+          <h3> Whats your current Zombie status?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q4" value="a" checked>Human (not a zombie)
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q4" value="b">Bitten, but not yet zombie
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q4" value="c">mmm, Brains!!!
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 columns">
+          <h3>chooose more things</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q5" value="a" checked>Android
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q5" value="b">simplified repetition
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q5" value="c">Style!!!
+            </label>
+          </div>
+        </div>
+        <div class="col-md-3 columns">
+          <h3>are you paying attention</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q6" value="a" checked>Yes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q6" value="b">huh, what?
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q6" value="c">Where we at with those brains?
+            </label>
+          </div>
+        </div>
+        <div class="col-md-3 columns">
+          <h3>would you have prefered less questions?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q7" value="a" checked>yes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q7" value="b">no
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q7" value="c">ANSWER!!!
+            </label>
+          </div>
+        </div>
+        <div class="col-md-3 columns">
+          <h3>Does this dress make me look fat?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q8" value="a" checked>Anything looks beautiful on you
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q8" value="b"> Your fat makes you look fat!
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q8" value="c">I refuse to objectify you
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <!--First round of questions with radio button-->
-  <div class="radio">
-    <h3>question</h3>
-    <label>
-    <input type="radio" name="zombieStatus" value="human" checked>
-    Human (not a zombie)
-  </label>
-  </div>
-  <div class="radio">
-    <label>
-    <input type="radio" name="zombieStatus" value="bitten">
-    Bitten, but not yet zombie
-  </label>
-  </div>
-  <div class="radio">
-    <label>
-    <input type="radio" name="zombieStatus" value="zombie">
-    Brains!!!
-  </label>
-  </div>
+  <!-- the button that makes it work!-->
   <button type="submit" class="btn">Submit</button>
   </form>
+<div id="output">
+</div>
+  <div class="a-answers hidden">
+    <!-- output field, image, homelink -->
+  </div>
+  <div class="b-answers hidden">
+    <!-- output field, image, homelink -->
+  </div>
+  <div class="c-answers hidden">
+    <!-- output field, image, homelink -->
+  </div>
+
 </body>
 
 </html>
