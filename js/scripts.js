@@ -20,16 +20,24 @@ $(document).ready(function() {
 
        if (q1==="a") {
         Acount= Acount+1;
+      $(".a-answers").removeClass("hidden");
+$(".initialpage").addClass("hidden");
+var resultPath="Java";
         }
 else if (q1==="b") {
         Bcount=Bcount+1;
+        $(".b-answers").removeClass("hidden");
+        $(".initialpage").addClass("hidden");
+var resultPath="Ruby";
 }
  else
 Ccount= Ccount+1;
-
+$(".c-answers").removeClass("hidden");
+$(".initialpage").addClass("hidden");
+var resultPath="Css design";
     var dob = $("#born").val();
 
-    var result = "thank you "+title+" "+name+", your zodiac for "+dob+" along with your choice's have revealed you're best suited for ." ;
+    var result = "thank you "+title+" "+name+", your zodiac for "+dob+" along with your choice's have revealed you're best suited for "+resultPath+"." ;
 
 // alert("a "+Acount+" ");
     $("#output").text(result);
