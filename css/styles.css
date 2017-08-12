@@ -10,3 +10,19 @@ display: none;
 body {
 background-color: purple;
 }
+#output {
+font-size: 24pt;
+color: green;
+}
+.a-answers {
+  font-size: 24pt;
+  color: lightblue;
+}
+.b-answers {
+  font-size: 24pt;
+  color: ruby;
+}
+.c-answers {
+  font-size: 24pt;
+  color: yellow;
+}
