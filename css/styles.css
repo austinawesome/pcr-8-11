@@ -17,6 +17,7 @@ color: green;
 
 .reveals{
   font-size: 5vh;
+  padding-left: 3vw;
 }
 
 .a-answers {
@@ -27,15 +28,14 @@ color: green;
 #bigJavaText {
 width: 70vw;
 font-size: 20pt;
-padding-left: 5vw;
 }
 
 .b-answers {
-  color: ruby;
+  color: red;
 }
 
 /*c answers are css design*/
 .c-answers {
   color: yellow;
-  background-image: url(https://netdna.webdesignerdepot.com/uploads/2009/03/css_remix.jpg);
+  background-color: pink;
 }
