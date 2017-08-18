@@ -14,15 +14,27 @@ background-color: purple;
 font-size: 24pt;
 color: green;
 }
+
+.reveals{
+  font-size: 5vh;
+}
+
 .a-answers {
-  font-size: 24pt;
   color: lightblue;
 }
+
+/*hopefully this will render due to specificity*/
+#bigJavaText {
+width: 70vw;
+font-size: 20pt;
+}
+
 .b-answers {
-  font-size: 24pt;
   color: ruby;
 }
+
+/*c answers are css design*/
 .c-answers {
-  font-size: 24pt;
   color: yellow;
+  background-image: url(https://netdna.webdesignerdepot.com/uploads/2009/03/css_remix.jpg);
 }
