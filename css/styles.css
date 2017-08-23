@@ -9,6 +9,7 @@ display: none;
 }*/
 body {
 background-color: purple;
+padding: 10pt;
 }
 #output {
 font-size: 24pt;

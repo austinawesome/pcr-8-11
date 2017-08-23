@@ -2,6 +2,7 @@ $(document).ready(function() {
   $("form#survey").submit(function(event) {
     event.preventDefault();
     var name = $("#name").val();
+    var resultPath = String;
     if (!name) {
       alert("You Forgot your name, we will call you NoGo Schwaggins!");
       name = "NoGo Schwaggins";
@@ -33,7 +34,7 @@ $(document).ready(function() {
     if (aCount > bCount && aCount > cCount) {
       $(".a-answers").removeClass("hidden");
       $(".initialpage").addClass("hidden");
-      var resultPath = "Java";
+      resultPath = "Java";
     } else if (bCount > cCount && aCount > cCount) {
       $(".b-answers").removeClass("hidden");
       $(".initialpage").addClass("hidden");
@@ -41,7 +42,7 @@ $(document).ready(function() {
     } else {
       $(".c-answers").removeClass("hidden");
       $(".initialpage").addClass("hidden");
-      var resultPath = "Css design";
+      resultPath = "Css design";
       var dob = $("#born").val();
     }
     var result = "Thank you " + title + " " + name + ", your zodiac for " + dob + " along with your choice's have revealed you're best suited for " + resultPath + ". Judging by the fact you're reading the source code, perhaps you're already a teacher?";
